@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>CSCI 1300 Responsive Redesign</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>KOLAH FARANGI</h1>
+        </div>
+        <div class="navbar">
+            <div class="navbar-option"><h2 class="navbar-h2">Home</h2></div>
+            <div class="navbar-option"><h2 class="navbar-h2">Menu</h2></div>
+            <div class="navbar-option"><h2 class="navbar-h2">Contact</h2></div>
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="home-description">
+            <div class="home-description-item"><h2>Kosher Chinese & Persian Cuisine</h2></div>
+            <div class="home-description-item"><h3>Sun-Thurs: 11am-10pm; Fri: 11am-3pm</h3></div>
+            <div class="order"><button class="order-button">ORDER NOW</button></div>
+        </div>
+        
+
+    </div>
+
+    <div class="image-grid">
+        <div class="img-container"><img src="./images/Chicken-Koobideh-square.jpg"/></div>
+        <div class="img-container"><img src="./images/chicken-lo-mein-1.jpg"/></div>
+        <div class="img-container"><img src="./images/szechuan-beef.jpg"/></div>
+        <div class="img-container"><img src="./images/koobideh.jpg"/></div>
+    </div>
+
+    <div class="menu-header">
+        <h2 class="big-header">MENU</h2>
+        <!-- <button onClick="toggle('menu')">show/hide</button> -->
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="cuisine"><h2 class="cuisine-text">CHINESE</h2></div>
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Chicken</h3>
+                        <button onClick="toggle('chicken-chinese')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with steamed white or Persian rice.</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="chicken-chinese">
+            </div>
+        </div> 
+
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Beef</h3>
+                        <button onClick="toggle('beef-chinese')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with steamed white or Persian rice.</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="beef-chinese">
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Vegetarian</h3>
+                        <button onClick="toggle('vegetarian')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with steamed white or Persian rice.</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="vegetarian">
+            </div>
+        </div>
+
+        <!-- PERSIAN -->
+        <div class="cuisine"><h2 class="cuisine-text">PERSIAN</h2></div>
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Chicken</h3>
+                        <button onClick="toggle('chicken-persian')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with flame broiled tomato and choice of side</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="chicken-persian">
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Beef</h3>
+                        <button onClick="toggle('beef-persian')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with flame broiled tomato and choice of side</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="beef-persian">
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-title-button-div">
+                        <h3 class="section-title-text">Fish</h3>
+                        <button onClick="toggle('fish')" class="section-button">show/hide</button>
+                    </div>
+                    <p>Served with flame broiled tomato and choice of side</p>
+                </div>
+            </div>
+
+            <div class="section-cols" id="fish">
+            </div>
+        </div>
+
+       
+
+    </div>
+
+    <div class="contact">
+        <h2 class="big-header">CONTACT</h2>
+        <div class="input-top">
+            <input placeholder="Name"/>
+            <input placeholder="Email"/>
+        </div>
+        
+        <textarea class="message" placeholder="Type your message here!"></textarea>
+        <button class="submit-button">Submit</button>
+    </div>
+    <script src="data.js"></script>
+
+    <div class="footer">
+        <h4 class="footer-h4">
+            Kolah Farangi
+        </h4>
+        <p>9180 W Pico Blvd, Los Angeles, CA 90035</p>
+        <p>(310) 274-4007</p>
+    </div>
+
+
+</body>
+
+</html>

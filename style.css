@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width:100vw;
+    /* background-color: #7a2b2b; */
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0.25rem 2rem;   
+}
+
+.logo {  
+    padding: 1rem 1rem 0rem 1rem;  
+    color: #5f1717;
+}
+
+.navbar {
+    /* position: absolute;
+    right: 0;
+    top: 6rem; */   
+    align-items: end;
+    width: 32rem;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: "Playfair Display SC";
+    font-weight: 700;
+}
+
+.navbar-option {
+    padding: 0 1rem 0;
+    margin: 0;
+}
+
+.navbar-option:hover {
+    background-color: #971717;
+    color: white;
+}
+
+.navbar-h2 {
+    font-size: 3rem; 
+    font-weight: 500; 
+    font-family: "Kumbh Sans";
+}
+
+.home {
+    background-image: url("./images/19-1.jpg");
+    /* background-color: blue; */
+    background-repeat: no-repeat;
+    /* background-size: 105% auto; */
+    background-size: cover;
+    background-position: 0 -10px;
+    height: 65rem;
+
+    font-family: "Kumbh Sans";
+    color: white;
+}
+
+.home-description {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    bottom: 16rem;
+    max-width: 80rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.home-description-item {
+    float: right;
+}
+
+h2 {
+    font-size: 7rem;
+}
+
+.order {
+    position: absolute;
+    right: 1rem;
+    bottom: -5rem;
+    margin: 1rem 0 0 0;
+}
+
+.order-button {
+    padding: 1rem;
+    font-weight: 700;
+    background-color: #d80c0c;
+    box-shadow: none;
+    border: none;
+}
+
+.order-button:hover {
+    background-color: #3a1414;
+}
+
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.img-container {
+    flex: 25%;
+    max-width: 25%;
+    height: 10%;
+    padding: 0 20px;
+    /* background-color: blue; */
+    
+}
+
+.img-container img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    size: cover;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.menu-header {
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.big-header {
+    font-size: 6rem;
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+
+    margin: 2rem 0;
+} 
+
+.menu {
+    background-color: #faf6f1;
+    color: black;
+    font-family: "Kumbh Sans";
+    margin: 1rem 12rem;
+    padding: 0.75rem 0 0.5rem;
+}
+
+.cuisine {
+    margin: 0 0 -2rem;
+    padding: 0 0 0 2rem;
+    border: 5px solid rgb(172, 49, 40);
+    border-left: none;
+    border-right: none;
+}
+
+.cuisine-text {
+    font-size: 4rem;
+}
+
+.section-container {
+    margin: 4rem 5rem;
+}
+
+.section-cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+.section-title-button-div {
+    display: flex;
+}
+
+.section-button {
+    height: 2.5rem;
+    margin: 2.45rem 0.7rem 0;
+    box-shadow: none;
+    border: none;
+    background-color: #971717
+}
+
+.section-button:hover {
+    background-color: #3a1414;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.menu-entry {
+    width: 48rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(172, 49, 40);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.footer-h4 {
+    font-weight: 700;
+    font-family: "Playfair Display SC";
+    font-size: 2.5rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-family: "Kumbh Sans";
+    font-weight: 500;
+}
+
+.contact {
+    margin: auto;
+    margin-top: 6rem;
+    text-align: center;
+    display: block;
+    width: 50%;
+}
+
+.input-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin: 0;
+    width: 49%;
+}
+
+.message {
+    width: 100%;
+    height: 10rem;
+    margin: 1rem 0 0;
+}
+
+.footer {
+    background-color: #5f1717;
+    padding: 4rem 3rem 2rem;
+    margin-top: 8rem;
+    bottom: 0;
+    box-shadow: 0 50vh 0 50vh #5f1717;
+    color: white;
+}
+
+p {
+    font-family: "Kumbh Sans";
+}
+
+.submit-button {
+    margin: 2.45rem 0.7rem 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    box-shadow: none;
+    border: none;
+    background-color: #971717
+}
+
+.submit-button:hover {
+    background-color: #3a1414;
+}
+
+@media (max-width:1300px) {
+    .menu-entry {
+        width: 45%;
+        padding-bottom: 1rem;
+    }
+
+}
+@media (max-width:900px){
+    h2 {
+        font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+   
+    .header {
+       display: block;
+    }
+
+   .navbar {
+        position: static;
+        right: auto;
+    }
+
+   .home-description {
+       max-width: 50rem;
+       bottom: 3rem;
+    }
+
+    .img-container {
+        flex: 50%;
+        max-width: 50%;
+        /* background-color: blue; */
+        
+    }
+
+    .menu {
+        margin: 1rem 6rem;
+    }
+
+    .menu-entry {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+   .section-container {
+        margin: 4rem 5rem;
+    }
+
+    .contact {
+        width: 60%;
+    }
+   
+}
